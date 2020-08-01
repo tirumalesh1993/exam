@@ -60,7 +60,7 @@
             var id = 0;
             var players_id = {{ players.count }}
             var username = '';
-            var url = 'ws://' + window.location.host + '/ws/exam/room/{{exam_id}}';
+            var url = 'wss://' + window.location.host + '/ws/exam/room/{{exam_id}}';
             var examSocket = new WebSocket(url);
 
             examSocket.onmessage = function(e) {
